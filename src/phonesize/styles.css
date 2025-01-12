@@ -1,0 +1,224 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6E8C4;
+}
+.circular-logo {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #F3D996;
+}
+
+header img {
+    height: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10;
+}
+
+nav ul li {
+    margin: 0 90px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Main Content */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    flex-wrap: wrap; /* Adjust for small screens */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+
+.cv table {
+    width: 60%;
+    margin: 20px ;
+    border-collapse: collapse;
+    background-color: #E0E0E0;
+}
+
+.cv table th, .cv table td {
+    border: 1px solid #050000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 40px;
+    background-color: #F6E8C4;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    text-align: center; 
+}
+
+.footer-content p {
+    margin-right: 20px;
+}
+
+.social-links a img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    padding: 20px;
+}
+
+
+/* HOBBIES */
+/* Main Content */
+/* Hobbies Grid */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 70px; /* Spacing between items */
+    padding: 30px;
+    justify-content: right;
+    align-items: start;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
+    text-align: left;
+}
+
+.hobby-item img {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hobby-item p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Style for the image */
+.about-image {
+    width: 200px;
+    height: 250px;
+    margin-right: 200px;
+    object-fit: cover; /* Ensure the image fits inside the circle */
+}
+
+/* Style for the text container */
+.about-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-text p {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.about-text span {
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Text Section */
+.home-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 50px;
+}
+/* Image Section */
+.home-image {
+    flex: 1;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Query for mobile */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        margin-bottom: 20px;
+    }
+
+    .home-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}

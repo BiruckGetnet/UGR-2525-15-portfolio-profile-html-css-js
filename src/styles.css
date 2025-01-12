@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6E8C4;
+}
+.circular-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F3D996;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Prevent items from stacking vertically */
+}
+
+nav ul li {
+    margin: 0 10px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Main Content */
+.content-wrapper {
+    display: grid;
+}
+.content-wrapper p{
+    text-align: center;
+}
+
+.about {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* CV Section */
+.cv table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #E0E0E0;
+}
+
+.cv table th, .cv table td {
+    border: 1px solid #050000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6E8C4;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-right: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hobbies Grid */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic grid for small devices */
+    gap: 20px;
+    padding: 20px;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.hobby-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content for small screens */
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    
+}
+
+.about-text p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-text {
+    margin-top: 100px;
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.home-image {
+    flex: 1;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Wrapper */
+.wrapper-x {
+    width: 100%;
+}
+
+.about{
+    margin-top: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    header {
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: nowrap; /* Ensure items stay side by side */
+    }
+
+    nav ul {
+        justify-content: center; /* Center navigation items */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduce margin for smaller screens */
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cv table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-text {
+        font-size: 1em;
+    }
+
+    .home-image {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul li {
+        margin: 0 3px; /* Further reduce margin for smaller devices */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Adjust font size for better readability */
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr; /* Single column on small devices */
+    }
+
+    .hobby-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-content p {
+        font-size: 0.8em;
+    }
+}
+
